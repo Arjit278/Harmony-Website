@@ -26,16 +26,12 @@ color:#0f172a;
 /* NAVBAR */
 
 .navbar{
-
 background:white;
 padding:15px 40px;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 box-shadow:0 2px 8px rgba(0,0,0,0.05);
-
 }
 
 .navbar img{
@@ -43,12 +39,10 @@ height:40px;
 }
 
 .navbar a{
-
 margin-left:20px;
 text-decoration:none;
 color:#2563eb;
 font-weight:600;
-
 }
 
 
@@ -67,7 +61,6 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-
 text-align:center;
 padding:40px;
 
@@ -89,29 +82,23 @@ margin-top:20px;
 }
 
 .btn{
-
 background:#2563eb;
 color:white;
-
 padding:12px 22px;
 margin:10px;
-
 border-radius:6px;
 text-decoration:none;
-
 display:inline-block;
-
+cursor:pointer;
 }
 
 
 /* SECTION */
 
 .section{
-
 max-width:1100px;
 margin:auto;
 padding:60px 20px;
-
 }
 
 .section h2{
@@ -123,24 +110,17 @@ margin-bottom:30px;
 /* CARD GRID */
 
 .grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
-
 }
 
 .card{
-
 background:white;
 padding:20px;
-
 border-radius:8px;
-
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
-
 text-align:center;
-
 }
 
 .card img{
@@ -161,21 +141,62 @@ margin-bottom:10px;
 /* FOOTER */
 
 footer{
-
 background:white;
 padding:40px;
 text-align:center;
 margin-top:40px;
-
 }
 
 footer a{
-
 margin:0 10px;
 text-decoration:none;
 color:#2563eb;
 font-weight:600;
+}
 
+
+/* MODAL */
+
+.modal{
+
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.6);
+
+justify-content:center;
+align-items:center;
+
+z-index:9999;
+
+}
+
+.modal-box{
+
+background:white;
+padding:40px;
+border-radius:10px;
+text-align:center;
+max-width:400px;
+width:90%;
+
+}
+
+.modal-box h2{
+margin-bottom:20px;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:30px;
+color:white;
+font-size:30px;
+cursor:pointer;
 }
 
 </style>
@@ -194,15 +215,10 @@ font-weight:600;
 <div>
 
 <a href="/">Home</a>
-
 <a href="/blog/">Blog</a>
-
 <a href="/privacy.html">Privacy</a>
-
 <a href="/terms.html">Terms</a>
-
 <a href="/support.html">Support</a>
-
 <a href="/refund.html">Refund</a>
 
 </div>
@@ -224,9 +240,34 @@ Your Business-Profit Strategist — AI-powered business intelligence, analytics,
 
 <div class="hero-buttons">
 
-<a href="/blog/" class="btn">Explore Insights</a>
+<a href="/blog/" class="btn">
 
-<a href="/support.html" class="btn">Contact Support</a>
+Explore Insights
+
+</a>
+
+
+<a href="https://harmony-business-intelligence.streamlit.app/"
+target="_blank"
+class="btn">
+
+Try Live Now
+
+</a>
+
+
+<button onclick="openModal()" class="btn">
+
+Full Demo Application
+
+</button>
+
+
+<a href="/support.html" class="btn">
+
+Contact Support
+
+</a>
 
 </div>
 
@@ -241,66 +282,37 @@ Your Business-Profit Strategist — AI-powered business intelligence, analytics,
 
 <div class="grid">
 
-
 <div class="card">
-
 <img src="/assets/finance.png">
-
 <h3>Financial Intelligence</h3>
-
 <p>
-
 Financial forecasting, profitability analysis, and enterprise financial intelligence.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <img src="/assets/Market.png">
-
 <h3>Market Intelligence</h3>
-
 <p>
-
 Market research, competitor analysis, and growth opportunity identification.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <img src="/assets/rag.png">
-
 <h3>Industrial Transformation</h3>
-
 <p>
-
 Manufacturing analytics, predictive maintenance, and root cause analysis.
-
 </p>
-
 </div>
-
 
 <div class="card">
-
 <img src="/assets/Front page Solution app.jpg">
-
 <h3>Business Intelligence</h3>
-
 <p>
-
 Executive dashboards and AI decision intelligence.
-
 </p>
-
 </div>
-
 
 </div>
 
@@ -315,58 +327,33 @@ Executive dashboards and AI decision intelligence.
 
 <div class="grid">
 
-
 <div class="card blog-card">
-
 <img src="/assets/harmony15.png">
-
 <a href="/blog/what-is-business-ai-2026.html">
-
 What is Business AI
-
 </a>
-
 </div>
 
-
 <div class="card blog-card">
-
 <img src="/assets/office.png">
-
 <a href="/blog/ai-solutions-manufacturing.html">
-
 Industrial AI Solutions
-
 </a>
-
 </div>
 
-
 <div class="card blog-card">
-
 <img src="/assets/Market.png">
-
 <a href="/blog/ai-business-analysis-platform-india.html">
-
 AI Product, Market & Financial Analysis
-
 </a>
-
 </div>
-
 
 <div class="card blog-card">
-
 <img src="/assets/finance.png">
-
 <a href="/blog/ai-demand-forecasting-supply-chain.html">
-
 AI Demand Forecasting Platform
-
 </a>
-
 </div>
-
 
 </div>
 
@@ -384,15 +371,11 @@ AI Demand Forecasting Platform
 <img src="/assets/Munjal.jpeg" style="height:80px">
 
 <p>
-
 ★★★★★ Harmony AI delivered exceptional depth of analysis and professional execution.
-
 </p>
 
 <p>
-
 — Senior Leadership, Hero Group
-
 </p>
 
 </div>
@@ -407,38 +390,100 @@ AI Demand Forecasting Platform
 <img src="/assets/Harmony.png" height="40">
 
 <p>
-
 © 2026 Harmony Systems Worldwide, Inc.
-
 </p>
 
 <p>
-
 info@harmony-business-ai.xyz  
 <br>
 +91-8383995759  
 <br>
 contact@harmony-business-ai.xyz
-
 </p>
 
 <p>
 
 <a href="/">Home</a>
-
 <a href="/blog/">Blog</a>
-
 <a href="/privacy.html">Privacy</a>
-
 <a href="/terms.html">Terms</a>
-
 <a href="/support.html">Support</a>
-
 <a href="/refund.html">Refund</a>
 
 </p>
 
 </footer>
+
+
+<!-- DEMO MODAL -->
+
+<div id="demoModal" class="modal">
+
+<div class="close" onclick="closeModal()">×</div>
+
+<div class="modal-box">
+
+<h2>Harmony AI Full Demo</h2>
+
+<p>
+
+Download demo or try live system
+
+</p>
+
+<a href="https://drive.google.com/file/d/1J-ysbXQIuGsJkRmFTB1lA_KPbFnnfPzm/view?usp=sharing"
+target="_blank"
+class="btn">
+
+Download Demo
+
+</a>
+
+
+<a href="https://harmony-business-intelligence.streamlit.app/"
+target="_blank"
+class="btn">
+
+Try Live System
+
+</a>
+
+<p>
+
+Contact for login credentials  
+<br>
+info@harmony-business-ai.xyz
+
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+function openModal(){
+
+document.getElementById("demoModal").style.display="flex";
+
+}
+
+function closeModal(){
+
+document.getElementById("demoModal").style.display="none";
+
+}
+
+window.onclick=function(e){
+
+if(e.target==document.getElementById("demoModal"))
+
+closeModal();
+
+}
+
+</script>
 
 
 </body>
