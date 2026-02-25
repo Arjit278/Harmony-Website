@@ -1,138 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Harmony AI Support</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<title>Harmony AI Support</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
 
-    body {
-      background: #f7f8fa;
-      color: #222;
-      line-height: 1.6;
-    }
+/* RESET */
 
-    /* HERO */
-    header {
-      min-height: 90vh;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.26), rgba(247,248,250,0.22)),
-        url("/assets/office.png") center / cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-attachment: fixed;
-      padding: 80px 20px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-    .content-box {
-      background: rgba(255, 255, 255, 0.92);
-      padding: 40px 50px;
-      border-radius: 12px;
-      max-width: 820px;
-      width: 100%;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      text-align: left;
-    }
+body{
+background:#f7f8fa;
+color:#222;
+line-height:1.6;
+}
 
-    h1 {
-      text-align: center;
-      font-size: 2.4rem;
-      margin-bottom: 20px;
-    }
 
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-      color: #333;
-    }
+/* NAVBAR */
 
-    p {
-      margin-bottom: 14px;
-      font-size: 1.05rem;
-    }
+.navbar{
 
-    ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
+background:white;
+padding:15px 40px;
 
-    ul li {
-      margin-bottom: 8px;
-    }
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-    .contact {
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-    }
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
 
-    .contact p {
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
+}
 
-    .contact a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+.navbar img{
+height:40px;
+}
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
-  </style>
+.navbar a{
+
+margin-left:20px;
+text-decoration:none;
+color:#2563eb;
+font-weight:600;
+
+}
+
+
+/* HERO */
+
+header{
+min-height:90vh;
+background:
+linear-gradient(180deg, rgba(255,255,255,0.26), rgba(247,248,250,0.22)),
+url("/assets/office.png") center / cover no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+background-attachment:fixed;
+
+padding:80px 20px;
+}
+
+
+.content-box{
+
+background:rgba(255,255,255,0.92);
+
+padding:40px 50px;
+
+border-radius:12px;
+
+max-width:820px;
+width:100%;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+text-align:left;
+
+}
+
+
+h1{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:20px;
+}
+
+h2{
+margin-top:30px;
+margin-bottom:10px;
+font-size:1.4rem;
+color:#333;
+}
+
+p{
+margin-bottom:14px;
+font-size:1.05rem;
+}
+
+ul{
+margin-left:20px;
+margin-bottom:20px;
+}
+
+ul li{
+margin-bottom:8px;
+}
+
+
+.contact{
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid #ddd;
+}
+
+.contact p{
+margin-bottom:8px;
+font-weight:500;
+}
+
+.contact a{
+color:#0066cc;
+text-decoration:none;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+
+/* FOOTER */
+
+footer{
+background:white;
+padding:25px;
+text-align:center;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <header>
-    <div class="content-box">
-      <h1>Harmony AI — Support</h1>
 
-      <p>
-        This page provides installation, usage, and support information for Harmony AI.
-      </p>
+<!-- NAVBAR -->
 
-      <h2>Installation</h2>
-      <p>
-        Harmony AI is distributed as a Windows EXE installer.
-        Installation requires user interaction and password entry.
-        Silent installation is not supported.
-      </p>
+<div class="navbar">
 
-      <h2>System Requirements</h2>
-      <ul>
-        <li>Windows 10 / 11 (64-bit)</li>
-        <li>Minimum 8 GB RAM recommended</li>
-      </ul>
+<img src="/assets/Harmony.png">
 
-      <h2>Installer Return Codes</h2>
-      <ul>
-        <li><strong>0</strong> — Installation successful</li>
-        <li><strong>1602</strong> — Installation cancelled by user</li>
-        <li><strong>1618</strong> — Installation already in progress</li>
-        <li><strong>1638</strong> — Application already installed</li>
-        <li><strong>3010</strong> — Restart required</li>
-      </ul>
+<div>
 
-      <h2>Contact</h2>
-      <div class="contact">
-        <p>Email: <a href="mailto:info@harmony-business-ai.xyz">info@harmony-business-ai.xyz</a></p>
-        <p>Email (Alternate): <a href="mailto:contact@harmony-business-ai.xyz">contact@harmony-business-ai.xyz</p>
-        <p>Phone / WhatsApp: +91 9560300666 / +91 8383995759</p>
-      </div>
-    </div>
-  </header>
+<a href="/">Home</a>
+
+<a href="/blog/">Blog</a>
+
+<a href="/privacy.html">Privacy</a>
+
+<a href="/terms.html">Terms</a>
+
+<a href="/support.html">Support</a>
+
+</div>
+
+</div>
+
+
+
+<header>
+
+<div class="content-box">
+
+<h1>Harmony AI — Support</h1>
+
+<p>
+This page provides installation, usage, and support information for Harmony AI.
+</p>
+
+
+<h2>Installation</h2>
+
+<p>
+Harmony AI is distributed as a Windows EXE installer.
+Installation requires user interaction and password entry.
+Silent installation is not supported.
+</p>
+
+
+<h2>System Requirements</h2>
+
+<ul>
+<li>Windows 10 / 11 (64-bit)</li>
+<li>Minimum 8 GB RAM recommended</li>
+</ul>
+
+
+<h2>Installer Return Codes</h2>
+
+<ul>
+<li><strong>0</strong> — Installation successful</li>
+<li><strong>1602</strong> — Installation cancelled by user</li>
+<li><strong>1618</strong> — Installation already in progress</li>
+<li><strong>1638</strong> — Application already installed</li>
+<li><strong>3010</strong> — Restart required</li>
+</ul>
+
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>Email: <a href="mailto:info@harmony-business-ai.xyz">info@harmony-business-ai.xyz</a></p>
+
+<p>Email (Alternate): <a href="mailto:contact@harmony-business-ai.xyz">contact@harmony-business-ai.xyz</a></p>
+
+<p>Phone / WhatsApp: +91 9560300666 / +91 8383995759</p>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+<footer>
+
+<img src="/assets/Harmony.png" height="40">
+
+<p>
+© 2026 Harmony Systems Worldwide
+</p>
+
+</footer>
+
 
 </body>
 </html>
