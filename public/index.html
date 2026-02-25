@@ -3,102 +3,191 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Harmony AI | Business Intelligence & AI Analytics Platform India</title>
+<title>Harmony AI | Enterprise Business Intelligence & AI Analytics Platform</title>
 
-<meta name="description" content="Harmony AI is an enterprise AI SaaS platform providing business intelligence, financial analysis, market intelligence, and industrial analytics for enterprises and manufacturing companies in India.">
-
-<meta name="keywords" content="
-AI SaaS platform India,
-Business intelligence platform India,
-AI analytics platform,
-Industrial AI solutions India,
-Financial analysis AI,
-Market intelligence AI,
-Harmony AI
-">
+<meta name="description" content="Harmony AI provides enterprise AI-powered business intelligence, financial analysis, industrial analytics, and market intelligence solutions for manufacturing and enterprises.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="canonical" href="https://harmony-business-ai.xyz/">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-XXXXXXX');
-</script>
-
 <style>
 
+/* GLOBAL */
+
 body{
-font-family:Inter,Arial;
 margin:0;
-background:#f8fafc;
+font-family:Inter,Arial;
+background:#f7f8fa;
 color:#0f172a;
 }
 
-header{
+
+/* NAVBAR */
+
+.navbar{
+
 background:white;
-padding:20px 40px;
-border-bottom:1px solid #ddd;
+padding:15px 40px;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
+
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+
 }
 
-nav a{
-margin:0 15px;
+.navbar img{
+
+height:40px;
+
+}
+
+.navbar a{
+
+margin-left:20px;
 text-decoration:none;
 color:#2563eb;
 font-weight:600;
+
 }
 
+
+/* HERO */
+
 .hero{
-padding:80px 20px;
+
+min-height:90vh;
+
+background:
+linear-gradient(rgba(255,255,255,0.55),
+rgba(247,248,250,0.75)),
+url("/assets/office.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
 text-align:center;
-background:linear-gradient(to bottom,#ffffff,#f1f5f9);
+
+padding:40px;
+
 }
 
 .hero h1{
-font-size:42px;
+
+font-size:48px;
+margin-bottom:20px;
+
 }
 
 .hero p{
+
+max-width:700px;
 font-size:18px;
-color:#475569;
+color:#334155;
+
+}
+
+.hero-buttons{
+
+margin-top:20px;
+
 }
 
 .btn{
+
 background:#2563eb;
 color:white;
-padding:12px 20px;
+
+padding:12px 22px;
 margin:10px;
-text-decoration:none;
+
 border-radius:6px;
+text-decoration:none;
+
 display:inline-block;
+
 }
+
+
+/* SECTION */
 
 .section{
-padding:60px 20px;
-max-width:1000px;
+
+max-width:1100px;
 margin:auto;
+padding:60px 20px;
+
 }
+
+.section h2{
+
+text-align:center;
+margin-bottom:30px;
+
+}
+
+
+/* CARD GRID */
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+
+}
+
 
 .card{
+
 background:white;
 padding:20px;
-margin:15px 0;
+
 border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.05);
+
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+text-align:center;
+
 }
 
+.card img{
+
+height:80px;
+margin-bottom:15px;
+
+}
+
+
+/* BLOG CARD */
+
+.blog-card img{
+
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+
+}
+
+
+/* FOOTER */
+
 footer{
+
 background:white;
-padding:30px;
+padding:40px;
 text-align:center;
-border-top:1px solid #ddd;
+
+margin-top:40px;
+
 }
 
 </style>
@@ -107,94 +196,72 @@ border-top:1px solid #ddd;
 
 <body>
 
-<header>
 
-<h2>Harmony AI</h2>
+<!-- NAVBAR -->
 
-<nav>
+<div class="navbar">
 
-<a href="https://harmony-business-ai.xyz/">Home</a>
+<img src="/assets/Harmony.png">
 
-<a href="https://harmony-business-ai.xyz/blog/">Blog</a>
+<div>
 
-<a href="https://harmony-business-ai.xyz/privacy.html">Privacy</a>
+<a href="/">Home</a>
 
-<a href="https://harmony-business-ai.xyz/terms.html">Terms</a>
+<a href="/blog/">Blog</a>
 
-<a href="https://harmony-business-ai.xyz/support.html">Support</a>
+<a href="/privacy.html">Privacy</a>
 
-</nav>
+<a href="/terms.html">Terms</a>
 
-</header>
+<a href="/support.html">Support</a>
+
+</div>
+
+</div>
 
 
-<section class="hero">
+<!-- HERO -->
+
+<div class="hero">
 
 <h1>Harmony AI</h1>
 
 <p>
+
 Your Business-Profit Strategist — AI-powered business intelligence, analytics, and enterprise decision systems for product, strategy, market, finance, and manufacturing.
+
 </p>
 
-<a class="btn" href="https://harmony-business-ai.xyz/blog/">
+<div class="hero-buttons">
 
-Explore AI Insights
+<a href="/blog/" class="btn">Explore Insights</a>
 
-</a>
+<a href="/" class="btn">Try Live System</a>
 
-<a class="btn" href="https://harmony-business-ai.xyz/">
+</div>
 
-Try Live System
-
-</a>
-
-</section>
+</div>
 
 
-<section class="section">
+<!-- SOLUTIONS -->
+
+<div class="section">
 
 <h2>Business Solutions</h2>
 
-
-<div class="card">
-
-<h3>Business Intelligence & Analytics</h3>
-
-<p>
-Executive dashboards, predictive analytics, and AI decision intelligence for enterprise leadership and strategic planning.
-</p>
-
-</div>
+<div class="grid">
 
 
 <div class="card">
 
-<h3>Product R&D and Optimization</h3>
-
-<p>
-AI-driven product analysis, engineering optimization, and innovation acceleration for faster growth.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Market Intelligence</h3>
-
-<p>
-Complete market reports, competitor intelligence, demand analysis, and growth opportunity forecasting.
-</p>
-
-</div>
-
-
-<div class="card">
+<img src="/assets/finance.png">
 
 <h3>Financial Intelligence</h3>
 
 <p>
-Financial analytics, revenue forecasting, cost optimization, and profitability intelligence.
+
+Financial forecasting, profitability analysis, and enterprise financial intelligence.
+
 </p>
 
 </div>
@@ -202,25 +269,68 @@ Financial analytics, revenue forecasting, cost optimization, and profitability i
 
 <div class="card">
 
-<h3>Industrial AI Solutions</h3>
+<img src="/assets/Market.png">
+
+<h3>Market Intelligence</h3>
 
 <p>
-Manufacturing analytics, predictive maintenance AI, root cause analysis, and operational optimization.
+
+Market research, competitor analysis, and growth opportunity identification.
+
 </p>
 
 </div>
 
 
-</section>
+<div class="card">
 
+<img src="/assets/rag.png">
 
-<section class="section">
+<h3>Industrial Transformation</h3>
 
-<h2>Latest Insights</h2>
+<p>
+
+Manufacturing analytics, predictive maintenance, and root cause analysis.
+
+</p>
+
+</div>
+
 
 <div class="card">
 
-<a href="https://harmony-business-ai.xyz/blog/what-is-business-ai-2026.html">
+<img src="/assets/Front page Solution app.jpg">
+
+<h3>Business Intelligence</h3>
+
+<p>
+
+Executive dashboards and AI decision intelligence.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- BLOG -->
+
+<div class="section">
+
+<h2>Latest AI Insights</h2>
+
+<div class="grid">
+
+
+<div class="card blog-card">
+
+<img src="/assets/harmony15.png">
+
+<a href="/blog/what-is-business-ai-2026.html">
 
 What is Business AI
 
@@ -228,9 +338,12 @@ What is Business AI
 
 </div>
 
-<div class="card">
 
-<a href="https://harmony-business-ai.xyz/blog/ai-solutions-manufacturing.html">
+<div class="card blog-card">
+
+<img src="/assets/office.png">
+
+<a href="/blog/ai-solutions-manufacturing.html">
 
 Industrial AI Solutions
 
@@ -238,9 +351,12 @@ Industrial AI Solutions
 
 </div>
 
-<div class="card">
 
-<a href="https://harmony-business-ai.xyz/blog/ai-business-analysis-platform-india.html">
+<div class="card blog-card">
+
+<img src="/assets/Market.png">
+
+<a href="/blog/ai-business-analysis-platform-india.html">
 
 AI Product, Market & Financial Analysis
 
@@ -248,9 +364,12 @@ AI Product, Market & Financial Analysis
 
 </div>
 
-<div class="card">
 
-<a href="https://harmony-business-ai.xyz/blog/ai-demand-forecasting-supply-chain.html">
+<div class="card blog-card">
+
+<img src="/assets/finance.png">
+
+<a href="/blog/ai-demand-forecasting-supply-chain.html">
 
 AI Demand Forecasting Platform
 
@@ -258,27 +377,44 @@ AI Demand Forecasting Platform
 
 </div>
 
-</section>
-
-
-<section class="section">
-
-<h2>Client Testimonial</h2>
-
-<div class="card">
-
-★★★★★ Trusted by Industry Leaders  
-
-Harmony AI delivered exceptional depth of analysis and professional execution.  
-
-— Senior Leadership, Hero Group
 
 </div>
 
-</section>
+</div>
 
+
+<!-- TESTIMONIAL -->
+
+<div class="section">
+
+<h2>Trusted by Industry Leaders</h2>
+
+<div class="card">
+
+<img src="/assets/Munjal.jpeg" style="height:80px">
+
+<p>
+
+★★★★★ Harmony AI delivered exceptional depth of analysis and professional execution.
+
+</p>
+
+<p>
+
+— Senior Leadership, Hero Group
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
 
 <footer>
+
+<img src="/assets/Harmony.png" height="40">
 
 <p>
 
@@ -288,19 +424,15 @@ Harmony AI delivered exceptional depth of analysis and professional execution.
 
 <p>
 
-info@harmony-business-ai.xyz  
+info@harmony-business-ai.xyz
 
 <br>
 
-+91-8383995759  
++91-8383995759
 
 <br>
 
-contact@harmony-business-ai.xyz  
-
-<br>
-
-+91-9560300666
+contact@harmony-business-ai.xyz
 
 </p>
 
