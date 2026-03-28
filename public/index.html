@@ -19,6 +19,26 @@
   gtag('config', 'AW-18045647385');
 </script>
 
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (url) {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18045647385/2zwDCJ_sopEcEJn06pxD',
+    'value': 19999.0,
+    'currency': 'INR',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>  
+
+
 <title>Harmony AI | Regenerative AI Business Solutions & Industrial Intelligence Platform under Patent Framework Layout</title>
 
 <meta name="description" content="Harmony AI provides enterprise AI-powered business intelligence, financial analysis, industrial analytics, and market intelligence solutions for manufacturing and enterprises.">
@@ -238,16 +258,9 @@ cursor:pointer;
 <a href="/refund.html">Refund</a>
 <a class="cta"
 href="https://arjitwave67.gumroad.com/l/harmony-business-ai"
-onclick="gtag('event', 'conversion', {
-  'send_to': 'AW-18045647385/AbCdEf12345',
-  'value': 19999.0,
-  'currency': 'INR'
-});">
+onclick="return gtag_report_conversion(this.href);">
 Buy Now (GST)
-</a>
-
-</div>
-
+</a> 
 </div>
 
 
