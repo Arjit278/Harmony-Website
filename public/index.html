@@ -1,172 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="aKYdW4PyvKTvi8U9_lVDlDi-moVCNsflkIMLp3UIjfA" />
-    <meta name="description" content="Harmony AI provides enterprise AI-powered business intelligence, financial analysis, industrial analytics, and market intelligence solutions for manufacturing and enterprises.">
-    <link rel="canonical" href="https://harmony-business-ai.xyz/">
-    <title>Harmony AI | Regenerative AI Business Solutions & Industrial Intelligence</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="aKYdW4PyvKTvi8U9_lVDlDi-moVCNsflkIMLp3UIjfA" />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXFS7WLC4G"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXFS7WLC4G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        /* GA4 */
-        gtag('config', 'G-GXFS7WLC4G');
+  /* GA4 Config */
+  gtag('config', 'G-GXFS7WLC4G');
 
-        /* Google Ads */
-        gtag('config', 'AW-18045647385');
+  /* Google Ads Config */
+  gtag('config', 'AW-18045647385');
 
-        /* FIXED: Google Ads Conversion Logic */
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-18045647385/AbCdEf12345',
-                'value': 19999.0,
-                'currency': 'INR',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
+  /* FIXED CONVERSION FUNCTION */
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18045647385/AbCdEf12345',
+        'value': 19999.0,
+        'currency': 'INR',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
 
-    <style>
-        /* GLOBAL - VERTICAL ALIGNMENT FIX */
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            font-family: 'Inter', Arial, sans-serif;
-            background: #f7f8fa;
-            color: #0f172a;
-            overflow-x: hidden; /* Fixes horizontal scroll */
-        }
+<title>Harmony AI | Regenerative AI Business Solutions & Industrial Intelligence</title>
+<meta name="description" content="Harmony AI provides enterprise AI-powered business intelligence, financial analysis, industrial analytics, and market intelligence solutions.">
+<link rel="canonical" href="https://harmony-business-ai.xyz/">
 
-        /* NAVBAR */
-        .navbar {
-            background: white;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar img { height: 40px; }
-        .nav-links { display: flex; align-items: center; }
-        .navbar a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .navbar a.cta {
-            background: #2563eb;
-            color: white !important;
-            padding: 8px 16px;
-            border-radius: 5px;
-        }
+<style>
+/* GLOBAL & VERTICAL ALIGNMENT */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #0f172a;
+    overflow-x: hidden;
+}
 
-        /* HERO - CLEAN VERTICAL CENTER */
-        .hero {
-            min-height: 90vh;
-            background: linear-gradient(rgba(255,255,255,0.6), rgba(247,248,250,0.8)),
-                        url("/assets/office.png") center / cover no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .hero h1 { font-size: clamp(32px, 8vw, 56px); margin: 0 0 20px 0; color: #1e293b; }
-        .hero p { max-width: 750px; font-size: 18px; color: #334155; line-height: 1.6; }
-        .hero-buttons { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar img { height: 40px; }
+.nav-links { display: flex; align-items: center; flex-wrap: wrap; }
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+}
+.navbar a.cta {
+    background: #2563eb;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
 
-        .btn {
-            background: #2563eb;
-            color: white;
-            padding: 14px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            font-weight: 600;
-            border: none;
-            transition: 0.3s ease;
-        }
-        .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+/* HERO SECTION */
+.hero {
+    min-height: 95vh;
+    background: linear-gradient(rgba(255,255,255,0.65), rgba(247,248,250,0.85)),
+                url("/assets/office.png") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero h1 { font-size: clamp(36px, 8vw, 60px); margin: 0 0 20px 0; color: #1e293b; }
+.hero p { max-width: 800px; font-size: 18px; color: #334155; line-height: 1.6; }
 
-        /* SECTIONS */
-        .section { max-width: 1100px; margin: auto; padding: 80px 20px; }
-        .section h2 { text-align: center; margin-bottom: 40px; font-size: 32px; color: #1e293b; }
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            text-align: center;
-        }
-        .card img { height: 80px; margin-bottom: 20px; object-fit: contain; }
+/* BUTTON STYLES */
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+}
+.btn:hover { background: #1d4ed8; transform: translateY(-2px); }
 
-        .blog-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+.btn-sec {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+.btn-sec:hover { background: #e2e8f0; }
 
-        /* FOOTER */
-        footer {
-            background: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-top: 1px solid #e2e8f0;
-        }
-        footer p { margin: 10px 0; color: #64748b; }
-        footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 600; }
+/* SECTIONS */
+.section { max-width: 1100px; margin: auto; padding: 80px 20px; }
+.section h2 { text-align: center; margin-bottom: 40px; font-size: 32px; color: #1e293b; }
 
-        /* MODAL */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.7);
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-        .modal-box {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-            position: relative;
-        }
-        .close { position: absolute; top: 10px; right: 20px; color: #333; font-size: 30px; cursor: pointer; }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+}
+.card img { height: 80px; margin-bottom: 20px; object-fit: contain; }
 
-        /* MOBILE ALIGNMENT */
-        @media (max-width: 768px) {
-            .navbar { flex-direction: column; padding: 15px; }
-            .nav-links { margin-top: 15px; justify-content: center; flex-wrap: wrap; }
-            .navbar a { margin: 5px 10px; }
-            .hero-buttons { flex-direction: column; width: 100%; }
-            .btn { width: 100%; }
-        }
-    </style>
+.blog-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+
+/* FOOTER */
+footer {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+}
+footer p { margin: 10px 0; color: #64748b; }
+footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 600; }
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.modal-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+}
+.close { position: absolute; top: 10px; right: 20px; color: #333; font-size: 30px; cursor: pointer; }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; padding: 15px; }
+    .nav-links { margin-top: 15px; justify-content: center; }
+    .navbar a { margin: 5px 8px; }
+    .hero-buttons { flex-direction: column; width: 100%; align-items: center; }
+    .btn, .btn-sec { width: 90%; text-align: center; }
+}
+</style>
 </head>
 
 <body>
@@ -183,13 +204,18 @@
 
 <div class="hero">
     <h1>Harmony AI</h1>
-    <p>Your Business-Profit Strategist — AI-powered business intelligence, analytics, and enterprise decision systems for product, strategy, market, finance, and manufacturing.</p>
+    <p>Your Business-Profit Strategist — AI-powered business intelligence, analytics, and enterprise decision systems for product, strategy, finance, and manufacturing.</p>
     
     <div class="hero-buttons">
         <a href="/blog/" class="btn">Explore Insights</a>
         <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn">Try Live Now</a>
         <button onclick="openModal()" class="btn" style="background: #0f172a;">Request Demo</button>
-        <a href="/support.html" class="btn" style="background: transparent; border: 1px solid #2563eb; color: #2563eb;">Contact Support</a>
+    </div>
+
+    <div class="hero-buttons" style="margin-top: 15px;">
+        <a href="/privacy.html" class="btn-sec">Privacy Policy</a>
+        <a href="/refund.html" class="btn-sec">Refund Policy</a>
+        <a href="/terms.html" class="btn-sec">Terms of Service</a>
     </div>
 
     <div style="margin-top:40px;">
@@ -202,20 +228,20 @@
 <div class="section">
     <h2>Business Solutions</h2>
     <div class="grid">
-        <div class="card"><img src="/assets/finance.png"><h3>Financial Intelligence</h3><p>Financial forecasting and profitability analysis.</p></div>
-        <div class="card"><img src="/assets/Market.png"><h3>Market Intelligence</h3><p>Market research and competitor analysis.</p></div>
-        <div class="card"><img src="/assets/rag.png"><h3>Industrial Transformation</h3><p>Predictive maintenance and root cause analysis.</p></div>
-        <div class="card"><img src="/assets/Front page Solution app.jpg"><h3>Business Intelligence</h3><p>Executive dashboards and decision intelligence.</p></div>
+        <div class="card"><img src="/assets/finance.png"><h3>Financial Intelligence</h3><p>Predictive analytics for capital efficiency and profitability.</p></div>
+        <div class="card"><img src="/assets/Market.png"><h3>Market Intelligence</h3><p>Real-time competitor mapping and demand forecasting.</p></div>
+        <div class="card"><img src="/assets/rag.png"><h3>Industrial Transformation</h3><p>Patented root cause analysis and predictive maintenance.</p></div>
+        <div class="card"><img src="/assets/Front page Solution app.jpg"><h3>Decision Intelligence</h3><p>Executive dashboards for complex industrial oversight.</p></div>
     </div>
 </div>
 
-<div class="section" style="background: #f1f5f9; border-radius: 20px;">
-    <h2>Our Regenerative AI Architecture</h2>
+<div class="section" style="background: #f1f5f9; border-radius: 24px;">
+    <h2>Regenerative AI Architecture</h2>
     <div class="grid">
-        <div class="card"><h3>Regenerative AI Engine</h3><p>Self-improving enterprise system evolving with market shifts.</p></div>
-        <div class="card"><h3>Patented RC™</h3><p>Advanced Root Cause Intelligence identifying systemic inefficiencies.</p></div>
-        <div class="card"><h3>Industrial AI Layer</h3><p>Scenario simulation for strategic growth planning.</p></div>
-        <div class="card"><h3>Market Intelligence</h3><p>AI-powered demand forecasting and competitor mapping.</p></div>
+        <div class="card"><h3>AI Engine</h3><p>Self-improving enterprise core designed for industrial data.</p></div>
+        <div class="card"><h3>Patented RC™</h3><p>Deep Root Cause Intelligence for systemic efficiency.</p></div>
+        <div class="card"><h3>Decision Layer</h3><p>Scenario simulation for strategic manufacturing growth.</p></div>
+        <div class="card"><h3>Strategic Intel</h3><p>Product lifecycle demand and competitor mapping.</p></div>
     </div>
 </div>
 
@@ -230,20 +256,10 @@
 </div>
 
 <div class="section">
-    <div class="card" style="max-width: 600px; margin: auto;">
+    <div class="card" style="max-width: 650px; margin: auto;">
         <img src="/assets/Munjal.jpeg" style="height:80px; border-radius: 50%;">
         <p>★★★★★ Harmony AI delivered exceptional depth of analysis and professional execution.</p>
         <p><strong>— Senior Leadership, Hero Group</strong></p>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Industries We Serve</h2>
-    <div class="grid">
-        <div class="card"><h3>Manufacturing</h3><p>Factory intelligence and production optimization.</p></div>
-        <div class="card"><h3>Market Strategy</h3><p>Demand modeling and competitive landscape analysis.</p></div>
-        <div class="card"><h3>Enterprise Finance</h3><p>Capital efficiency and profitability intelligence.</p></div>
-        <div class="card"><h3>Consulting Firms</h3><p>Analytics layer for digital transformation.</p></div>
     </div>
 </div>
 
@@ -251,9 +267,9 @@
     <img src="/assets/Harmony.png" height="40">
     <p>© 2026 Harmony Systems Worldwide, Inc.</p>
     <p>info@harmony-business-ai.xyz | +91-8383995759</p>
-    <p>
-        <a href="/">Home</a> | <a href="/blog/">Blog</a> | <a href="/privacy.html">Privacy</a> | <a href="/support.html">Support</a> | <a href="/refund.html">Refund</a>
-    </p>
+    <div style="margin-top: 20px;">
+        <a href="/">Home</a> | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/support.html">Support</a> | <a href="/refund.html">Refund</a>
+    </div>
 </footer>
 
 <div id="demoModal" class="modal">
@@ -261,11 +277,11 @@
         <div class="close" onclick="closeModal()">×</div>
         <h2>Harmony AI Demo</h2>
         <p>Try our full demo or the live system below.</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-            <a href="https://wa.link/hetal3" target="_blank" class="btn">Request WhatsApp Demo</a>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+            <a href="https://wa.link/hetal3" target="_blank" class="btn">WhatsApp Demo Request</a>
             <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn" style="background: #0f172a;">Try Live System</a>
         </div>
-        <p style="font-size: 12px; margin-top: 20px;">Contact: info@harmony-business-ai.xyz</p>
+        <p style="font-size: 12px; margin-top: 20px; color: #64748b;">Credentials: info@harmony-business-ai.xyz</p>
     </div>
 </div>
 
