@@ -17,7 +17,7 @@
   /* Google Ads Config */
   gtag('config', 'AW-18045647385');
 
-  /* FIXED CONVERSION FUNCTION */
+  /* VERIFIED TRACKER FUNCTION */
   function gtag_report_conversion(url) {
     var callback = function () {
       if (typeof(url) != 'undefined') {
@@ -34,12 +34,12 @@
   }
 </script>
 
-<title>Harmony AI | Regenerative AI Business Solutions & Industrial Intelligence</title>
-<meta name="description" content="Harmony AI provides enterprise AI-powered business intelligence, financial analysis, industrial analytics, and market intelligence solutions.">
+<title>Harmony AI | Regenerative AI Business Solutions & Industrial Intelligence under Patent Framework</title>
+<meta name="description" content="Inspired by leaders like ChatGPT, Gemini, and NVIDIA. Harmony AI delivers next-gen SaaS for predictive analytics, industrial automation, and financial intelligence.">
 <link rel="canonical" href="https://harmony-business-ai.xyz/">
 
 <style>
-/* GLOBAL & VERTICAL ALIGNMENT */
+/* GLOBAL & VERTICAL STACKING */
 * { box-sizing: border-box; }
 body {
     margin: 0;
@@ -47,9 +47,10 @@ body {
     background: #f7f8fa;
     color: #0f172a;
     overflow-x: hidden;
+    line-height: 1.5;
 }
 
-/* NAVBAR */
+/* NAVBAR - LINKS ALIGNED RIGHT */
 .navbar {
     background: white;
     padding: 15px 40px;
@@ -62,14 +63,16 @@ body {
     z-index: 1000;
 }
 .navbar img { height: 40px; }
-.nav-links { display: flex; align-items: center; flex-wrap: wrap; }
+.nav-links { display: flex; align-items: center; }
 .navbar a {
-    margin-left: 20px;
+    margin-left: 18px;
     text-decoration: none;
     color: #2563eb;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
+    transition: 0.2s;
 }
+.navbar a:hover { color: #1e40af; }
 .navbar a.cta {
     background: #2563eb;
     color: white !important;
@@ -79,8 +82,8 @@ body {
 
 /* HERO SECTION */
 .hero {
-    min-height: 95vh;
-    background: linear-gradient(rgba(255,255,255,0.65), rgba(247,248,250,0.85)),
+    min-height: 90vh;
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(247,248,250,0.85)),
                 url("/assets/office.png") center / cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -89,103 +92,41 @@ body {
     text-align: center;
     padding: 60px 20px;
 }
-.hero h1 { font-size: clamp(36px, 8vw, 60px); margin: 0 0 20px 0; color: #1e293b; }
-.hero p { max-width: 800px; font-size: 18px; color: #334155; line-height: 1.6; }
+.hero h1 { font-size: clamp(32px, 8vw, 56px); margin: 0 0 20px 0; color: #1e293b; }
+.hero p { max-width: 850px; font-size: 18px; color: #334155; }
+.hero-buttons { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
 
-.hero-buttons {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-}
-
-/* BUTTON STYLES */
 .btn {
-    background: #2563eb;
-    color: white;
-    padding: 14px 26px;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 600;
-    border: none;
-    transition: 0.3s ease;
+    background: #2563eb; color: white; padding: 14px 26px;
+    border-radius: 6px; text-decoration: none; display: inline-block;
+    cursor: pointer; font-weight: 600; border: none; transition: 0.3s;
 }
 .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
 
-.btn-sec {
-    background: #f1f5f9;
-    color: #475569;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    border: 1px solid #e2e8f0;
-    transition: 0.3s;
-}
-.btn-sec:hover { background: #e2e8f0; }
-
-/* SECTIONS */
-.section { max-width: 1100px; margin: auto; padding: 80px 20px; }
-.section h2 { text-align: center; margin-bottom: 40px; font-size: 32px; color: #1e293b; }
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    text-align: center;
-}
+/* GRID SYSTEM */
+.section { max-width: 1200px; margin: auto; padding: 80px 20px; }
+.section h2 { text-align: center; margin-bottom: 40px; color: #1e293b; font-size: 32px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); }
 .card img { height: 80px; margin-bottom: 20px; object-fit: contain; }
 
-.blog-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+.blog-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; height: 180px; object-fit: cover; }
 
 /* FOOTER */
-footer {
-    background: white;
-    padding: 60px 20px;
-    text-align: center;
-    border-top: 1px solid #e2e8f0;
-}
-footer p { margin: 10px 0; color: #64748b; }
+footer { background: white; padding: 60px 20px; text-align: center; border-top: 1px solid #e2e8f0; }
 footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 600; }
 
 /* MODAL */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-.modal-box {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    position: relative;
-}
-.close { position: absolute; top: 10px; right: 20px; color: #333; font-size: 30px; cursor: pointer; }
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 9999; }
+.modal-box { background: white; padding: 40px; border-radius: 12px; text-align: center; max-width: 400px; width: 90%; position: relative; }
+.close { position: absolute; top: 10px; right: 20px; font-size: 30px; cursor: pointer; color: #64748b; }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .navbar { flex-direction: column; padding: 15px; }
-    .nav-links { margin-top: 15px; justify-content: center; }
-    .navbar a { margin: 5px 8px; }
-    .hero-buttons { flex-direction: column; width: 100%; align-items: center; }
-    .btn, .btn-sec { width: 90%; text-align: center; }
+    .nav-links { margin-top: 15px; justify-content: center; flex-wrap: wrap; }
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .btn { width: 100%; }
 }
 </style>
 </head>
@@ -198,28 +139,25 @@ footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 6
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
         <a href="/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/refund.html">Refund</a>
         <a class="cta" href="https://arjitwave67.gumroad.com/l/harmony-business-ai" onclick="return gtag_report_conversion('https://arjitwave67.gumroad.com/l/harmony-business-ai');">Buy Now (GST)</a>
     </div>
 </div>
 
 <div class="hero">
     <h1>Harmony AI</h1>
-    <p>Your Business-Profit Strategist — AI-powered business intelligence, analytics, and enterprise decision systems for product, strategy, finance, and manufacturing.</p>
-    
+    <p>Inspired by global innovation leaders like ChatGPT, Gemini, and NVIDIA. We deliver next-generation AI-native SaaS for predictive analytics, industrial automation, and strategic decision systems.</p>
     <div class="hero-buttons">
         <a href="/blog/" class="btn">Explore Insights</a>
         <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn">Try Live Now</a>
         <button onclick="openModal()" class="btn" style="background: #0f172a;">Request Demo</button>
-    </div>
-
-    <div class="hero-buttons" style="margin-top: 15px;">
-        <a href="/privacy.html" class="btn-sec">Privacy Policy</a>
-        <a href="/refund.html" class="btn-sec">Refund Policy</a>
-        <a href="/terms.html" class="btn-sec">Terms of Service</a>
+        <a href="/support.html" class="btn" style="background: transparent; border: 1px solid #2563eb; color: #2563eb;">Contact</a>
     </div>
 
     <div style="margin-top:40px;">
-        <a href="https://www.shipit.buzz/products/harmony-business-ai?ref=badge" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.shipit.buzz/products/harmony-business-ai?ref=badge" target="_blank">
             <img src="https://www.shipit.buzz/api/products/harmony-business-ai/badge?theme=dark" alt="Featured on Shipit" style="height:55px;">
         </a>
     </div>
@@ -228,30 +166,32 @@ footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 6
 <div class="section">
     <h2>Business Solutions</h2>
     <div class="grid">
-        <div class="card"><img src="/assets/finance.png"><h3>Financial Intelligence</h3><p>Predictive analytics for capital efficiency and profitability.</p></div>
-        <div class="card"><img src="/assets/Market.png"><h3>Market Intelligence</h3><p>Real-time competitor mapping and demand forecasting.</p></div>
-        <div class="card"><img src="/assets/rag.png"><h3>Industrial Transformation</h3><p>Patented root cause analysis and predictive maintenance.</p></div>
-        <div class="card"><img src="/assets/Front page Solution app.jpg"><h3>Decision Intelligence</h3><p>Executive dashboards for complex industrial oversight.</p></div>
+        <div class="card"><img src="/assets/finance.png"><h3>Financial Intelligence</h3><p>Enterprise forecasting and profitability analysis systems.</p></div>
+        <div class="card"><img src="/assets/Market.png"><h3>Market Intelligence</h3><p>Competitor mapping and growth opportunity identification.</p></div>
+        <div class="card"><img src="/assets/rag.png"><h3>Industrial Transformation</h3><p>Manufacturing analytics and patented root cause intelligence.</p></div>
+        <div class="card"><img src="/assets/Front page Solution app.jpg"><h3>Decision Intelligence</h3><p>Executive dashboards for AI-led strategic planning.</p></div>
     </div>
 </div>
 
 <div class="section" style="background: #f1f5f9; border-radius: 24px;">
     <h2>Regenerative AI Architecture</h2>
     <div class="grid">
-        <div class="card"><h3>AI Engine</h3><p>Self-improving enterprise core designed for industrial data.</p></div>
-        <div class="card"><h3>Patented RC™</h3><p>Deep Root Cause Intelligence for systemic efficiency.</p></div>
-        <div class="card"><h3>Decision Layer</h3><p>Scenario simulation for strategic manufacturing growth.</p></div>
-        <div class="card"><h3>Strategic Intel</h3><p>Product lifecycle demand and competitor mapping.</p></div>
+        <div class="card"><h3>AI Engine</h3><p>Self-improving enterprise core designed for complex industrial data.</p></div>
+        <div class="card"><h3>Patented RC™</h3><p>Advanced Root Cause Intelligence identifying systemic inefficiencies.</p></div>
+        <div class="card"><h3>Industrial AI Layer</h3><p>Scenario simulation for manufacturing and product optimization.</p></div>
+        <div class="card"><h3>Enterprise Market Intel</h3><p>Demand forecasting and competitor landscape mapping.</p></div>
     </div>
 </div>
 
 <div class="section">
-    <h2>Latest AI Insights</h2>
+    <h2>Harmony AI Insights</h2>
     <div class="grid">
         <div class="card blog-card"><img src="/assets/harmony15.png"><a href="/blog/what-is-business-ai-2026.html">What is Business AI</a></div>
         <div class="card blog-card"><img src="/assets/office.png"><a href="/blog/ai-solutions-manufacturing.html">Industrial AI Solutions</a></div>
+        <div class="card blog-card"><img src="/assets/rag.png"><a href="/blog/ai-vs-traditional-bi.html">AI vs Traditional BI</a></div>
         <div class="card blog-card"><img src="/assets/Market.png"><a href="/blog/ai-business-analysis-platform-india.html">Market & Financial Analysis</a></div>
         <div class="card blog-card"><img src="/assets/finance.png"><a href="/blog/ai-demand-forecasting-supply-chain.html">AI Demand Forecasting</a></div>
+        <div class="card blog-card"><img src="/assets/Harmony.png"><a href="/blog/best-bi-platforms-india.html">Best BI Platforms in India</a></div>
     </div>
 </div>
 
@@ -266,22 +206,21 @@ footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 6
 <footer>
     <img src="/assets/Harmony.png" height="40">
     <p>© 2026 Harmony Systems Worldwide, Inc.</p>
-    <p>info@harmony-business-ai.xyz | +91-8383995759</p>
+    <p>contact@harmony-business-ai.xyz | +91-8383995759</p>
     <div style="margin-top: 20px;">
-        <a href="/">Home</a> | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/support.html">Support</a> | <a href="/refund.html">Refund</a>
+        <a href="/">Home</a> | <a href="/blog/">Blog</a> | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/refund.html">Refund</a>
     </div>
 </footer>
 
 <div id="demoModal" class="modal">
     <div class="modal-box">
-        <div class="close" onclick="closeModal()">×</div>
+        <span class="close" onclick="closeModal()">×</span>
         <h2>Harmony AI Demo</h2>
-        <p>Try our full demo or the live system below.</p>
+        <p>Try our demo application or the live system.</p>
         <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
             <a href="https://wa.link/hetal3" target="_blank" class="btn">WhatsApp Demo Request</a>
             <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn" style="background: #0f172a;">Try Live System</a>
         </div>
-        <p style="font-size: 12px; margin-top: 20px; color: #64748b;">Credentials: info@harmony-business-ai.xyz</p>
     </div>
 </div>
 
