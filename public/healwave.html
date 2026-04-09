@@ -25,12 +25,36 @@ body {
 h1 { color: #1e293b; }
 h2 { margin-top: 30px; color: #2563eb; }
 
+/* ✅ UPDATED HERO ONLY */
 .hero {
-  background: linear-gradient(rgba(255,255,255,55), rgba(255,255,255,0.65)),
-              url('/assets/Hand.png') center / cover no-repeat;
-  padding: 60px 30px;
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+
+  background: url('/assets/Hand.png') center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 40px 20px;
   border-radius: 10px;
   margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.55);
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
 }
 
 ul { margin-top: 10px; }
