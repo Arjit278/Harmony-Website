@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
 <meta charset="UTF-8">
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZLVGFML');
+</script>
+<!-- End Google Tag Manager --> 
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="aKYdW4PyvKTvi8U9_lVDlDi-moVCNsflkIMLp3UIjfA" />
 <meta name="google-adsense-account" content="ca-pub-5375809241835812">
@@ -158,6 +174,13 @@ footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 6
 
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZLVGFML"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div class="navbar">
     <img src="/assets/Harmony.png" alt="Harmony AI Logo">
     <div class="nav-links">
@@ -183,9 +206,12 @@ footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 6
            target="_blank"
            rel="noopener noreferrer"
            class="btn"
-           style="background: #0f172a;">
+           style="background:#0f172a;"
+           onclick="dataLayer.push({
+               'event': 'request_free_demo'
+           });">
             Request Free Demo
-        </a> 
+        </a>
          <a href="/support.html" class="btn" style="background: transparent; border: 1px solid #2563eb; color: #2563eb;">Contact</a>
     </div>
 
