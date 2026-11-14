@@ -162,14 +162,32 @@ ul li {
     color: #5eead4;
 }
 
-.contact-link {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 600;
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 14px;
 }
 
-.contact-link:hover {
+.contact-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f172a;
+    border: 1px solid #1e3a5f;
+    color: #38bdf8;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.contact-pill:hover {
+    border-color: #5eead4;
     color: #5eead4;
+    transform: translateY(-2px);
 }
 
 /* FOOTER */
@@ -261,9 +279,14 @@ footer a:hover {
     </div>
 
     <h2>Contact</h2>
-    <p>
-        <a class="contact-link" href="mailto:info@harmony-business-ai.xyz">info@harmony-business-ai.xyz</a>
-    </p>
+    <p>For privacy inquiries, enterprise security audits, or direct support, reach us via email, phone, or WhatsApp:</p>
+    <div class="contact-grid">
+        <a class="contact-pill" href="mailto:info@harmony-business-ai.xyz">✉ info@harmony-business-ai.xyz</a>
+        <a class="contact-pill" href="tel:+919560300666">📞 Call: +91-9560300666</a>
+        <a class="contact-pill" href="tel:+919818368339">📞 Call: +91-9818368339</a>
+        <a class="contact-pill" href="https://wa.me/919560300666" target="_blank" rel="noopener noreferrer">💬 WhatsApp: +91-9560300666</a>
+        <a class="contact-pill" href="https://wa.me/919818368339" target="_blank" rel="noopener noreferrer">💬 WhatsApp: +91-9818368339</a>
+    </div>
 
 </section>
 
@@ -271,6 +294,10 @@ footer a:hover {
 <footer>
     <img src="/assets/Harmony.png" height="40" alt="Harmony AI Logo">
     <p>© 2026 Harmony Systems Worldwide</p>
+    <p style="font-size: 14px; margin: 10px 0;">
+        Email: <a href="mailto:info@harmony-business-ai.xyz">info@harmony-business-ai.xyz</a> |
+        Call / WhatsApp: <a href="tel:+919560300666">+91-9560300666</a> / <a href="https://wa.me/919818368339" target="_blank" rel="noopener noreferrer">+91-9818368339</a>
+    </p>
     <p>
         <a href="/support.html">Support</a> |
         <a href="/terms.html">Terms</a> |
