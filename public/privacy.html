@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18045647385"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18045647385');
+</script>
 <meta name="google-adsense-account" content="ca-pub-5375809241835812">
 
 <title>Privacy &amp; Security Policy | Harmony AI</title>
@@ -33,9 +39,9 @@
 
 body {
     margin: 0;
-    font-family: 'Inter', system-ui, sans-serif;
-    background: var(--bg-main);
-    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #060b14;
+    color: #f1f5f9;
     line-height: 1.65;
 }
 
@@ -47,7 +53,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--border-soft);
+    border-bottom: 1px solid #1e293b;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
@@ -68,12 +74,12 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--accent-teal);
+    color: #5eead4;
 }
 
 /* HERO */
 header {
-    min-height: 48vh;
+    min-height: 45vh;
     background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.16), transparent 45%),
                 linear-gradient(rgba(6, 11, 20, 0.84), rgba(6, 11, 20, 0.95)),
                 url("/assets/office.png") center / cover no-repeat;
@@ -83,14 +89,14 @@ header {
     justify-content: center;
     text-align: center;
     padding: 50px 20px;
-    border-bottom: 1px solid var(--border-soft);
+    border-bottom: 1px solid #1e293b;
 }
 
 .security-badge {
     display: inline-block;
     background: rgba(20, 184, 166, 0.14);
     border: 1px solid rgba(45, 212, 191, 0.45);
-    color: var(--accent-teal);
+    color: #5eead4;
     padding: 6px 16px;
     border-radius: 999px;
     font-size: 12px;
@@ -103,6 +109,7 @@ header {
 header h1 {
     font-size: clamp(32px, 5vw, 44px);
     margin: 0;
+    color: #ffffff;
     background: linear-gradient(to right, #ffffff, #93c5fd, #5eead4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -123,7 +130,7 @@ h2 {
 }
 
 section p {
-    color: var(--text-muted);
+    color: #94a3b8;
     font-size: 16px;
 }
 
@@ -147,4 +154,129 @@ ul li {
     padding: 30px;
     margin-top: 35px;
     border-radius: 14px;
-    box-shadow:
+    box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #5eead4;
+}
+
+.contact-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-link:hover {
+    color: #5eead4;
+}
+
+/* FOOTER */
+footer {
+    background: #040810;
+    border-top: 1px solid #1e293b;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: #94a3b8;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #5eead4;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+    .navbar a {
+        margin: 0 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <img src="/assets/Harmony.png" alt="Harmony AI Logo">
+    <div>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/support.html">Support</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<header>
+    <div class="security-badge">Enterprise Zero-Retention Security • Omnicore Engine</div>
+    <h1>Privacy &amp; Security Policy</h1>
+</header>
+
+<!-- CONTENT -->
+<section>
+
+    <p><strong>Last updated:</strong> January 2026</p>
+
+    <p>
+        Harmony AI is committed to protecting enterprise and customer data. Our platform is designed with enterprise-grade security, privacy, and confidentiality.
+    </p>
+
+    <h2>Information Collection</h2>
+    <ul>
+        <li>Account identifiers such as email</li>
+        <li>Operational analytics for system reliability</li>
+        <li>Business data submitted for analysis</li>
+    </ul>
+
+    <h2>Data Protection</h2>
+    <p>
+        Harmony AI uses secure infrastructure and encrypted processing environments to protect enterprise data across our Advanced-RAG and multivariable analytical workflows.
+    </p>
+
+    <!-- DRP POLICY -->
+    <div class="card">
+        <h2>DRP Zero-Retention Policy</h2>
+        <p>
+            Harmony AI’s Omnicore engine follows a strict <strong>Data Retention Protection (DRP) Zero-Retention Policy</strong>.
+        </p>
+        <ul>
+            <li>No enterprise data is permanently stored.</li>
+            <li>No customer data is used for AI training.</li>
+            <li>Secure runtime processing environment.</li>
+            <li>Automatic deletion after processing.</li>
+            <li>Enterprise-grade confidential analysis.</li>
+        </ul>
+    </div>
+
+    <h2>Contact</h2>
+    <p>
+        <a class="contact-link" href="mailto:info@harmony-business-ai.xyz">info@harmony-business-ai.xyz</a>
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <img src="/assets/Harmony.png" height="40" alt="Harmony AI Logo">
+    <p>© 2026 Harmony Systems Worldwide</p>
+    <p>
+        <a href="/support.html">Support</a> |
+        <a href="/terms.html">Terms</a> |
+        <a href="/refund.html">Refund</a>
+    </p>
+</footer>
+
+</body>
+</html>
