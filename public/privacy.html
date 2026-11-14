@@ -1,284 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18045647385"></script>
-<meta name="google-adsense-account" content="ca-pub-5375809241835812">
-  
 <head>
 <meta charset="UTF-8">
 
-<title>Privacy Policy | Harmony AI</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18045647385"></script>
+<meta name="google-adsense-account" content="ca-pub-5375809241835812">
+
+<title>Privacy &amp; Security Policy | Harmony AI</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Harmony AI Privacy Policy and Zero-Retention DRP policy explaining secure enterprise AI analytics and data protection.">
+<meta name="description" content="Harmony AI Privacy Policy and Zero-Retention DRP policy explaining secure enterprise AI analytics, confidential Adv-RAG processing, and data protection.">
 
 <link rel="canonical" href="https://harmony-business-ai.xyz/privacy.html">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 :root {
---bg-main:#f7f8fa;
---bg-soft:#ffffff;
---accent:#2563eb;
---text-main:#0f172a;
---text-muted:#475569;
---border-soft:#e5e7eb;
+    --bg-main: #060b14;
+    --bg-soft: #0f172a;
+    --accent: #38bdf8;
+    --accent-teal: #5eead4;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border-soft: #1e293b;
 }
 
-body{
-margin:0;
-font-family:'Inter',system-ui;
-background:var(--bg-main);
-color:var(--text-main);
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.65;
+}
 
 /* NAVBAR */
-
-.navbar{
-
-background:white;
-padding:15px 40px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-box-shadow:0 2px 8px rgba(0,0,0,0.05);
-
+.navbar {
+    background: rgba(11, 18, 32, 0.94);
+    backdrop-filter: blur(12px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-soft);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar img{
-
-height:40px;
-
+.navbar img {
+    height: 40px;
 }
 
-.navbar a{
-
-margin-left:20px;
-text-decoration:none;
-color:var(--accent);
-font-weight:600;
-
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #93c5fd;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s;
 }
 
+.navbar a:hover {
+    color: var(--accent-teal);
+}
 
 /* HERO */
-
-header{
-
-min-height:50vh;
-
-background:
-linear-gradient(rgba(255,255,255,0.6),
-rgba(247,248,250,0.8)),
-url("/assets/office.png");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
+header {
+    min-height: 48vh;
+    background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.16), transparent 45%),
+                linear-gradient(rgba(6, 11, 20, 0.84), rgba(6, 11, 20, 0.95)),
+                url("/assets/office.png") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid var(--border-soft);
 }
 
-header h1{
-
-font-size:42px;
-
+.security-badge {
+    display: inline-block;
+    background: rgba(20, 184, 166, 0.14);
+    border: 1px solid rgba(45, 212, 191, 0.45);
+    color: var(--accent-teal);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
 }
 
+header h1 {
+    font-size: clamp(32px, 5vw, 44px);
+    margin: 0;
+    background: linear-gradient(to right, #ffffff, #93c5fd, #5eead4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* CONTENT */
-
-section{
-
-max-width:900px;
-margin:auto;
-padding:60px 20px;
-
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-section p{
-
-color:var(--text-muted);
-
+h2 {
+    color: #f8fafc;
+    font-size: 24px;
+    margin-top: 34px;
+    margin-bottom: 12px;
 }
 
-ul{
-
-color:var(--text-muted);
-
+section p {
+    color: var(--text-muted);
+    font-size: 16px;
 }
 
+section p strong {
+    color: #e2e8f0;
+}
+
+ul {
+    color: #cbd5e1;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
 
 /* CARD */
-
-.card{
-
-background:white;
-padding:20px;
-margin-top:30px;
-
-border-radius:8px;
-
-box-shadow:0 4px 12px rgba(0,0,0,0.06);
-
-}
-
-
-/* FOOTER */
-
-footer{
-
-background:white;
-padding:30px;
-text-align:center;
-
-margin-top:40px;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-
-<!-- NAVBAR -->
-
-<div class="navbar">
-
-<img src="/assets/Harmony.png">
-
-<div>
-
-<a href="/">Home</a>
-
-<a href="/blog/">Blog</a>
-
-<a href="/support.html">Support</a>
-
-</div>
-
-</div>
-
-
-<!-- HERO -->
-
-<header>
-
-<h1>Privacy & Security Policy</h1>
-
-</header>
-
-
-<!-- CONTENT -->
-
-<section>
-
-<p><strong>Last updated:</strong> January 2026</p>
-
-<p>
-
-Harmony AI is committed to protecting enterprise and customer data. Our platform is designed with enterprise-grade security, privacy, and confidentiality.
-
-</p>
-
-
-<h2>Information Collection</h2>
-
-<ul>
-
-<li>Account identifiers such as email</li>
-
-<li>Operational analytics for system reliability</li>
-
-<li>Business data submitted for analysis</li>
-
-</ul>
-
-
-<h2>Data Protection</h2>
-
-<p>
-
-Harmony AI uses secure infrastructure and encrypted processing environments to protect enterprise data.
-
-</p>
-
-
-<!-- DRP POLICY -->
-
-<div class="card">
-
-<h2>DRP Zero-Retention Policy</h2>
-
-<p>
-
-Harmony AI’s Omnicore engine follows a strict <strong>Data Retention Protection (DRP) Zero-Retention Policy</strong>.
-
-</p>
-
-<ul>
-
-<li>No enterprise data is permanently stored.</li>
-
-<li>No customer data is used for AI training.</li>
-
-<li>Secure runtime processing environment.</li>
-
-<li>Automatic deletion after processing.</li>
-
-<li>Enterprise-grade confidential analysis.</li>
-
-</ul>
-
-</div>
-
-
-<h2>Contact</h2>
-
-<p>
-
-info@harmony-business-ai.xyz
-
-</p>
-
-
-</section>
-
-
-<footer>
-
-<img src="/assets/Harmony.png" height="40">
-
-<p>
-
-© 2026 Harmony Systems Worldwide
-
-</p>
-
-<p>
-
-<a href="/support.html">Support</a> |
-
-<a href="/terms.html">Terms</a> |
-
-<a href="/refund.html">Refund</a>
-
-</p>
-
-</footer>
-
-
-</body>
-</html>
+.card {
+    background: linear-gradient(145deg, #0b1324, #0f1c33);
+    border: 1px solid #1e3a5f;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 14px;
+    box-shadow:
