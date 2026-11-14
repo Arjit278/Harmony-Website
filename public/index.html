@@ -24,7 +24,7 @@ f.parentNode.insertBefore(j,f);
 
 <meta name='impact-site-verification' value='4210a3dc-d743-48bf-add0-ea386c931dbd'>
   
-<<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXFS7WLC4G"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXFS7WLC4G"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -53,30 +53,32 @@ f.parentNode.insertBefore(j,f);
   }
 </script>
 
-<title>Harmony Business Intelligence| Regenerative AI Business Solutions & Industrial Intelligence</title>
-<meta name="description" content="Enterprise RAG-AI powered business intelligence, financial analysis, and industrial analytics for manufacturing and strategy.">
+<title>Harmony Business Intelligence | Patented Regenerative AI & Industrial Intelligence</title>
+<meta name="description" content="Enterprise RAG-AI powered business intelligence, Arjit's Theory - The Art of Problem Solving™, financial analysis, and patented industrial analytics for manufacturing and strategy.">
 <link rel="canonical" href="https://harmony-business-ai.xyz/">
 
 <style>
-/* GLOBAL STYLING */
+/* GLOBAL DARK THEME STYLING */
 * { box-sizing: border-box; }
 body {
     margin: 0;
-    font-family: 'Inter', Arial, sans-serif;
-    background: #f7f8fa;
-    color: #0f172a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #060b14;
+    color: #e2e8f0;
     overflow-x: hidden;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* NAVBAR */
 .navbar {
-    background: white;
+    background: rgba(11, 18, 32, 0.92);
+    backdrop-filter: blur(12px);
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #1e293b;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -86,23 +88,29 @@ body {
 .navbar a {
     margin-left: 18px;
     text-decoration: none;
-    color: #2563eb;
+    color: #93c5fd;
     font-weight: 600;
     font-size: 13px;
     transition: 0.2s;
 }
-.navbar a:hover { color: #1e40af; }
+.navbar a:hover { color: #38bdf8; }
 .navbar a.cta {
-    background: #2563eb;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #0d9488, #2563eb);
+    color: #ffffff !important;
+    padding: 9px 18px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(20, 184, 166, 0.35);
+}
+.navbar a.cta:hover {
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.6);
+    transform: translateY(-1px);
 }
 
 /* HERO SECTION */
 .hero {
-    min-height: 90vh;
-    background: linear-gradient(rgba(255,255,255,0.6), rgba(247,248,250,0.85)),
+    min-height: 92vh;
+    background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.15), transparent 45%),
+                linear-gradient(rgba(6, 11, 20, 0.82), rgba(6, 11, 20, 0.96)),
                 url("/assets/office.png") center / cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -110,64 +118,216 @@ body {
     align-items: center;
     text-align: center;
     padding: 60px 20px;
+    border-bottom: 1px solid #1e293b;
 }
-.hero h1 { font-size: clamp(32px, 8vw, 56px); margin: 0 0 20px 0; color: #1e293b; }
-.hero p { max-width: 850px; font-size: 18px; color: #334155; margin-bottom: 10px; }
+.patent-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(20, 184, 166, 0.12);
+    border: 1px solid rgba(45, 212, 191, 0.4);
+    color: #5eead4;
+    padding: 7px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.hero h1 { 
+    font-size: clamp(34px, 7vw, 58px); 
+    margin: 0 0 20px 0; 
+    background: linear-gradient(to right, #ffffff, #93c5fd, #5eead4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.15;
+}
+.hero p { max-width: 880px; font-size: 18px; color: #cbd5e1; margin-bottom: 12px; }
 .hero-buttons { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
 
 .btn {
-    background: #2563eb; color: white; padding: 14px 26px;
+    background: #2563eb; color: #ffffff; padding: 14px 26px;
     border-radius: 6px; text-decoration: none; display: inline-block;
     cursor: pointer; font-weight: 600; border: none; transition: 0.3s;
 }
-.btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+.btn:hover { background: #1d4ed8; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35); }
+.btn-teal {
+    background: linear-gradient(135deg, #0d9488, #0284c7);
+    color: #ffffff;
+}
+.btn-teal:hover {
+    background: linear-gradient(135deg, #0f766e, #0369a1);
+    box-shadow: 0 8px 24px rgba(20, 184, 166, 0.4);
+}
 
-/* GRID SYSTEM */
+/* GRID & CARD SYSTEM */
 .section { max-width: 1200px; margin: auto; padding: 80px 20px; }
-.section h2 { text-align: center; margin-bottom: 40px; color: #1e293b; font-size: 32px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center; transition: 0.3s; }
-.card:hover { transform: translateY(-5px); }
-.card img { height: 80px; margin-bottom: 20px; object-fit: contain; }
+.section h2 { text-align: center; margin-bottom: 16px; color: #f8fafc; font-size: 34px; }
+.section-subtitle { text-align: center; max-width: 850px; margin: 0 auto 45px; color: #94a3b8; font-size: 17px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; }
+.card { 
+    background: #0f172a; 
+    border: 1px solid #1e293b;
+    padding: 30px; 
+    border-radius: 14px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4); 
+    text-align: center; 
+    transition: 0.3s; 
+}
+.card:hover { 
+    transform: translateY(-5px); 
+    border-color: #2dd4bf;
+    box-shadow: 0 14px 35px rgba(20, 184, 166, 0.15);
+}
+.card h3 { color: #f1f5f9; margin-top: 0; }
+.card p { color: #94a3b8; font-size: 15px; }
+.card img { height: 80px; margin-bottom: 20px; object-fit: contain; border-radius: 6px; }
 
+/* PATENT ARCHITECTURE SPOTLIGHT */
+.patent-box {
+    background: linear-gradient(145deg, #0b1324, #0f1c33);
+    border: 1px solid #1e3a5f;
+    border-radius: 20px;
+    padding: 45px 35px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.pipeline-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 40px;
+}
+.pipeline-step {
+    background: #060b14;
+    border: 1px solid #2dd4bf;
+    color: #5eead4;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.pipeline-arrow { color: #38bdf8; font-weight: bold; }
+
+/* CATCHY IP LEASING & ASSET SHOWCASE SECTION */
+.lease-showcase {
+    background: linear-gradient(135deg, #091221 0%, #0d1d33 100%);
+    border: 1px solid #1e3a5f;
+    border-radius: 22px;
+    padding: 50px 40px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+.lease-badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.lease-features {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 30px;
+}
+.lease-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    color: #cbd5e1;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.lease-features li strong { color: #5eead4; }
+.lease-poster-wrap {
+    text-align: center;
+    position: relative;
+}
+.lease-poster-wrap img {
+    width: 100%;
+    max-width: 390px;
+    border-radius: 16px;
+    border: 1px solid rgba(45, 212, 191, 0.45);
+    box-shadow: 0 20px 50px rgba(13, 148, 136, 0.25);
+    transition: 0.35s;
+}
+.lease-poster-wrap img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 60px rgba(56, 189, 248, 0.35);
+}
+
+/* VIDEO CONTAINER */
+.media-wrapper {
+    max-width: 960px;
+    margin: auto;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.65);
+    background: #000;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.5);
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BLOG CARDS */
 .blog-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; height: 180px; object-fit: cover; }
+.blog-card a { color: #60a5fa; text-decoration: none; font-weight: 700; font-size: 16px; transition: 0.2s; }
+.blog-card a:hover { color: #5eead4; }
 
 /* FOOTER */
-footer { background: white; padding: 60px 20px; text-align: center; border-top: 1px solid #e2e8f0; margin-top: 40px; }
-footer a { margin: 0 10px; text-decoration: none; color: #2563eb; font-weight: 600; }
+footer { 
+    background: #040810; 
+    padding: 60px 20px; 
+    text-align: center; 
+    border-top: 1px solid #1e293b; 
+    margin-top: 40px; 
+    color: #94a3b8;
+}
+footer a { margin: 0 10px; text-decoration: none; color: #38bdf8; font-weight: 600; }
+footer a:hover { color: #5eead4; }
 
 /* MODAL */
-.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 9999; }
-.modal-box { background: white; padding: 40px; border-radius: 12px; text-align: center; max-width: 400px; width: 90%; position: relative; }
-.close { position: absolute; top: 10px; right: 20px; font-size: 30px; cursor: pointer; color: #64748b; }
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.82); justify-content: center; align-items: center; z-index: 9999; }
+.modal-box { background: #0f172a; border: 1px solid #334155; color: #f8fafc; padding: 40px; border-radius: 14px; text-align: center; max-width: 420px; width: 90%; position: relative; }
+.close { position: absolute; top: 10px; right: 20px; font-size: 30px; cursor: pointer; color: #94a3b8; }
 
+@media (max-width: 860px) {
+    .lease-showcase { grid-template-columns: 1fr; padding: 30px 20px; }
+}
 @media (max-width: 768px) {
     .navbar { flex-direction: column; padding: 15px; }
-    .nav-links { margin-top: 15px; justify-content: center; flex-wrap: wrap; }
+    .nav-links { margin-top: 15px; justify-content: center; flex-wrap: wrap; gap: 6px; }
+    .navbar a { margin-left: 10px; }
     .hero-buttons { flex-direction: column; width: 100%; }
     .btn { width: 100%; }
-}
-
-/* Responsive YouTube Video */
-
-.video-container{
-    position:relative;
-    width:100%;
-    max-width:960px;
-    margin:auto;
-    padding-bottom:56.25%;
-    height:0;
-    overflow:hidden;
-    border-radius:18px;
-    box-shadow:0 15px 45px rgba(0,0,0,.15);
-}
-
-.video-container iframe{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
 }
 </style>
 </head>
@@ -181,6 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<!-- NAVBAR (ALL TABS PRESERVED) -->
 <div class="navbar">
     <img src="/assets/Harmony.png" alt="Harmony AI Logo">
     <div class="nav-links">
@@ -195,68 +356,110 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
 </div>
 
+<!-- HERO SECTION -->
 <div class="hero">
+    <div class="patent-pill">⚡ Patent Application Filed (India / Delhi) • Arjit’s Theory – The Art of Problem Solving™</div>
     <h1>Harmony Business Intelligence</h1>
     <p>Enterprise RAG-AI powered business intelligence, financial analysis, and industrial analytics and solutions for manufacturing and enterprises.</p>
-    <p>Designed under patent layout framework first in the world, powered by advanced-RAG, fueled by real time data for predictive analytics and strategic decision systems available under Intellectual Property Leasing.</p>
+    <p>Designed under a world-first <strong>Multivariable Matrix Patent Framework</strong>, powered by Advanced-RAG and real-time operational data for quantified decision systems—available under <strong>Intellectual Property Leasing</strong>.</p>
     <div class="hero-buttons">
         <a href="/blog/" class="btn">Explore Insights</a>
-        <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn">Try Live Now</a>
+        <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn btn-teal">Try Live Now</a>
         <a href="https://forms.gle/QD8pJLxskVw7Xcnz7"
            target="_blank"
            rel="noopener noreferrer"
            class="btn"
-           style="background:#0f172a;"
+           style="background:#1e293b; border: 1px solid #334155;"
            onclick="dataLayer.push({
                'event': 'request_free_demo'
            });">
             Request Free Demo
         </a>
-         <a href="/support.html" class="btn" style="background: transparent; border: 1px solid #2563eb; color: #2563eb;">Contact</a>
+        <a href="/support.html" class="btn" style="background: transparent; border: 1px solid #38bdf8; color: #38bdf8;">Contact</a>
     </div>
 
-    <div style="width: 100%; display: flex; justify-content: flex-start; padding-left: 40px; margin-top: 40px;">
-        <div style="display: flex; align-items: center; background: white; border: 1px solid #e2e8f0; padding: 12px 18px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <img src="/assets/ads.jpg" style="height:35px; margin-right: 15px; object-fit: contain;">
+    <div style="width: 100%; max-width: 1200px; display: flex; justify-content: flex-start; padding-left: 20px; margin-top: 45px;">
+        <div style="display: flex; align-items: center; background: rgba(15, 23, 42, 0.9); border: 1px solid #1e3a5f; padding: 12px 18px; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.4);">
+            <img src="/assets/ads.jpg" alt="Verified Solution" style="height:35px; margin-right: 15px; object-fit: contain; border-radius: 4px;">
             <div style="text-align: left;">
-                <div style="font-size: 11px; color: #64748b; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">Verified Solution</div>
-                <div style="font-size: 15px; color: #1e293b; font-weight: 700;">Optimized & Patent</div>
+                <div style="font-size: 11px; color: #5eead4; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">Verified Patent-Pending IP</div>
+                <div style="font-size: 15px; color: #f8fafc; font-weight: 700;">Optimized Matrix &amp; RAG Architecture</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- ================= PRODUCT DEMO VIDEO ================= -->
-
-<div class="section" style="padding:60px 20px;background:#ffffff;">
-
-    <h2 style="text-align:center;font-size:34px;margin-bottom:20px;">
-        Watch Harmony Business AI in Action
-    </h2>
-
-    <p style="
-        text-align:center;
-        max-width:900px;
-        margin:0 auto 35px;
-        font-size:18px;
-        color:#475569;
-    ">
-        Discover how Harmony Business AI analyzes complex manufacturing,
-        business, and operational challenges using our patented Regenerative AI
-        framework to generate first time in world with Contribution analysis, Impact assessment, Variable significance, Quantified recommendations and Decision-focused recommendations.
+<!-- ================= NEW SHARED ASSET 1: PATENTED TECHNOLOGY SHOWCASE MP4 ================= -->
+<div class="section" style="padding-bottom: 30px;">
+    <div style="text-align:center;">
+        <span class="lease-badge">Patented IP &amp; Adv-RAG Lifecycle</span>
+    </div>
+    <h2>Adv-RAG Lifecycle &amp; Theory of Matrix Solutions™</h2>
+    <p class="section-subtitle">
+        Don’t just find the problem—understand the multivariable system creating it. Watch how our patent-filed architecture connects enterprise data capture, Adv-RAG enhancement, and matrix optimization into measurable outcomes.
     </p>
 
-    <div style="
-        max-width:960px;
-        margin:auto;
-        border-radius:18px;
-        overflow:hidden;
-        box-shadow:0 15px 45px rgba(0,0,0,.15);
-    ">
+    <div class="media-wrapper">
+        <video controls autoplay muted loop playsinline poster="/assets/Harmony Business Intelligence.png" style="width:100%; display:block; max-height:560px; object-fit:cover;">
+            <source src="/assets/Harmony Business Intelligence.mp4" type="video/mp4">
+            Your browser does not support the HTML5 video tag.
+        </video>
+    </div>
+</div>
 
+<!-- ================= PATENT-BASED SOLUTIONS SPOTLIGHT ================= -->
+<div class="section">
+    <div class="patent-box">
+        <div style="text-align:center;">
+            <span class="patent-pill" style="margin-bottom:12px;">Core Intellectual Property • Inventor: Arjit Chand</span>
+            <h2 style="margin-top:0;">Arjit’s Theory – The Art of Problem Solving™</h2>
+            <p class="section-subtitle" style="margin-bottom: 20px;">
+                Unlike generic GPT systems that give linear, prompt-only guesses, Harmony investigates complex organizational challenges through a structured multivariable matrix—moving from reactive symptom-fixing to quantified problem eradication.
+            </p>
+        </div>
+
+        <div class="pipeline-flow">
+            <span class="pipeline-step">1. Enterprise Data &amp; Signals</span>
+            <span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">2. Variable Mapping</span>
+            <span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">3. Matrix Relationship Analysis</span>
+            <span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">4. Contribution &amp; Impact Quantification</span>
+            <span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">5. Optimization &amp; Prevention</span>
+        </div>
+
+        <div class="grid">
+            <div class="card" style="background:#080e1a;">
+                <h3>Multivariable Matrix vs. Linear</h3>
+                <p>Analyzes simultaneous interactions across process, human, financial, supply-chain, and technical variables rather than assuming a single isolated root cause.</p>
+            </div>
+            <div class="card" style="background:#080e1a;">
+                <h3>Quantified Recommendations</h3>
+                <p>Replaces vague advice with exact variable significance, contribution percentages, risk assessments, and measurable ROI intervention pathways.</p>
+            </div>
+            <div class="card" style="background:#080e1a;">
+                <h3>Beyond Six Sigma, TOC &amp; FMEA</h3>
+                <p>Acts as a unified diagnostic intelligence layer upstream of optimization—combining Lean/Six Sigma rigor with Advanced-RAG over Excel, logs, and ERP records.</p>
+            </div>
+            <div class="card" style="background:#080e1a;">
+                <h3>Problem Eradication Loop</h3>
+                <p>Extends root cause analysis into corrective validation and continuous prevention so recurring operational bottlenecks are permanently eliminated.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= PRODUCT DEMO YOUTUBE VIDEO (PRESERVED) ================= -->
+<div class="section" style="padding-top: 20px;">
+    <h2>Watch Harmony Business AI in Action</h2>
+    <p class="section-subtitle">
+        Discover how Harmony Business AI analyzes complex manufacturing, business, and operational challenges using our patented Regenerative AI framework to generate first-time-in-the-world Contribution analysis, Impact assessment, Variable significance, and Decision-focused recommendations.
+    </p>
+
+    <div class="video-container">
         <iframe
-            width="100%"
-            height="540"
             src="https://www.youtube.com/embed/fsBZMrDHD6s?rel=0"
             title="Harmony Business AI Product Demonstration"
             frameborder="0"
@@ -264,35 +467,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
         </iframe>
-
     </div>
 
     <div style="text-align:center;margin-top:25px;">
-
         <a href="https://youtu.be/fsBZMrDHD6s"
            target="_blank"
            class="btn">
             ▶ Watch on YouTube
         </a>
-
     </div>
-
 </div>
 
-<!-- ================= BUSINESS SOLUTIONS ================= -->
-
-
+<!-- ================= CATCHY MID/BELOW IP LEASING SECTION + NEW SHARED IMAGE ================= -->
 <div class="section">
-    <h2>Business Solutions</h2>>
-    <div class="grid">
-        <div class="card"><img src="/assets/finance.png"><h3>Financial Intelligence</h3><p>Enterprise forecasting and profitability analysis systems.</p></div>
-        <div class="card"><img src="/assets/Market.png"><h3>Market Intelligence</h3><p>Competitor mapping and growth opportunity identification.</p></div>
-        <div class="card"><img src="/assets/rag.png"><h3>Industrial Transformation</h3><p>Manufacturing analytics and patented root cause intelligence.</p></div>
-        <div class="card"><img src="/assets/Front page Solution app.jpg"><h3>Decision Intelligence</h3><p>Executive dashboards for AI-led strategic planning.</p></div>
+    <div class="lease-showcase">
+        <div>
+            <span class="lease-badge">Enterprise IP &amp; Technology Licensing</span>
+            <h2 style="text-align:left; margin: 0 0 16px 0; font-size: 34px; line-height: 1.2;">
+                Lease the Patented Matrix Intelligence Technology Today
+            </h2>
+            <p style="color:#cbd5e1; font-size: 16px;">
+                Deploy our patent-pending multivariable problem-solving architecture directly inside your enterprise workflows, manufacturing plants, or analytics stack under flexible Intellectual Property Leasing.
+            </p>
+            <ul class="lease-features">
+                <li><span>✦</span> <div><strong>Impact Assessment:</strong> Pinpoint exact operational and financial downstream effects before deploying capital.</div></li>
+                <li><span>✦</span> <div><strong>Quantified Measurements:</strong> Measure variable contribution and improvement potential with mathematical clarity.</div></li>
+                <li><span>✦</span> <div><strong>Discussion-Based Variable Inputs:</strong> Interactive executive parameter tuning across live operational constraints.</div></li>
+                <li><span>✦</span> <div><strong>Matrix Solutions:</strong> Cross-functional root cause intelligence spanning Finance, Supply Chain, and Manufacturing.</div></li>
+            </ul>
+            <div style="display:flex; flex-wrap:wrap; gap:14px;">
+                <a class="btn btn-teal" href="https://www.creem.io/payment/prod_85YAA2rTMIBJO0riSaTKQ" onclick="return gtag_report_conversion('https://www.creem.io/payment/prod_85YAA2rTMIBJO0riSaTKQ');">
+                    Lease the Technology Now
+                </a>
+                <a class="btn" style="background:#1e293b; border:1px solid #334155;" href="https://forms.gle/QD8pJLxskVw7Xcnz7" target="_blank" rel="noopener noreferrer">
+                    Schedule IP Briefing
+                </a>
+            </div>
+        </div>
+
+        <div class="lease-poster-wrap">
+            <a href="https://www.creem.io/payment/prod_85YAA2rTMIBJO0riSaTKQ" onclick="return gtag_report_conversion('https://www.creem.io/payment/prod_85YAA2rTMIBJO0riSaTKQ');">
+                <img src="/assets/Harmony Business Intelligence.png" alt="Lease the Technology - Harmony Business Intelligence Matrix Solutions">
+            </a>
+        </div>
     </div>
 </div>
 
-<div class="section" style="background: #f1f5f9; border-radius: 24px;">
+<!-- ================= BUSINESS SOLUTIONS (PRESERVED) ================= -->
+<div class="section">
+    <h2>Business Solutions</h2>
+    <div class="grid">
+        <div class="card"><img src="/assets/finance.png" alt="Financial Intelligence"><h3>Financial Intelligence</h3><p>Enterprise forecasting and profitability analysis systems.</p></div>
+        <div class="card"><img src="/assets/Market.png" alt="Market Intelligence"><h3>Market Intelligence</h3><p>Competitor mapping and growth opportunity identification.</p></div>
+        <div class="card"><img src="/assets/rag.png" alt="Industrial Transformation"><h3>Industrial Transformation</h3><p>Manufacturing analytics and patented root cause intelligence.</p></div>
+        <div class="card"><img src="/assets/Front page Solution app.jpg" alt="Decision Intelligence"><h3>Decision Intelligence</h3><p>Executive dashboards for AI-led strategic planning.</p></div>
+    </div>
+</div>
+
+<!-- ================= REGENERATIVE AI ARCHITECTURE (PRESERVED) ================= -->
+<div class="section" style="background: #0b1324; border: 1px solid #1e293b; border-radius: 24px;">
     <h2>Regenerative AI Architecture</h2>
     <div class="grid">
         <div class="card"><h3>AI Engine</h3><p>Self-improving enterprise core designed for complex industrial data.</p></div>
@@ -302,43 +535,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
 </div>
 
+<!-- ================= HARMONY AI INSIGHTS / BLOG (PRESERVED) ================= -->
 <div class="section">
     <h2>Harmony AI Insights</h2>
     <div class="grid">
-        <div class="card blog-card"><img src="/assets/harmony15.png"><a href="/blog/what-is-business-ai-2026.html">What is Business AI</a></div>
-        <div class="card blog-card"><img src="/assets/office.png"><a href="/blog/ai-solutions-manufacturing.html">Industrial AI Solutions</a></div>
-        <div class="card blog-card"><img src="/assets/rag.png"><a href="/blog/ai-vs-traditional-bi.html">AI vs Traditional BI</a></div>
-        <div class="card blog-card"><img src="/assets/Market.png"><a href="/blog/ai-business-analysis-platform-india.html">Market & Financial Analysis</a></div>
-        <div class="card blog-card"><img src="/assets/finance.png"><a href="/blog/ai-demand-forecasting-supply-chain.html">AI Demand Forecasting</a></div>
-        <div class="card blog-card"><img src="/assets/Harmony.png"><a href="/blog/best-bi-platforms-india.html">Best BI Platforms in India</a></div>
+        <div class="card blog-card"><img src="/assets/harmony15.png" alt="What is Business AI"><a href="/blog/what-is-business-ai-2026.html">What is Business AI</a></div>
+        <div class="card blog-card"><img src="/assets/office.png" alt="Industrial AI Solutions"><a href="/blog/ai-solutions-manufacturing.html">Industrial AI Solutions</a></div>
+        <div class="card blog-card"><img src="/assets/rag.png" alt="AI vs Traditional BI"><a href="/blog/ai-vs-traditional-bi.html">AI vs Traditional BI</a></div>
+        <div class="card blog-card"><img src="/assets/Market.png" alt="Market & Financial Analysis"><a href="/blog/ai-business-analysis-platform-india.html">Market &amp; Financial Analysis</a></div>
+        <div class="card blog-card"><img src="/assets/finance.png" alt="AI Demand Forecasting"><a href="/blog/ai-demand-forecasting-supply-chain.html">AI Demand Forecasting</a></div>
+        <div class="card blog-card"><img src="/assets/Harmony.png" alt="Best BI Platforms in India"><a href="/blog/best-bi-platforms-india.html">Best BI Platforms in India</a></div>
     </div>
 </div>
 
+<!-- ================= TESTIMONIAL (PRESERVED) ================= -->
 <div class="section">
     <div class="card" style="max-width: 800px; margin: auto; padding: 40px;">
-        <img src="/assets/Munjal.jpeg" style="height:180px; width: auto; margin-bottom: 25px; border-radius: 8px;">
-        <p style="font-size: 18px; line-height: 1.6;">★★★★★ Harmony AI delivered exceptional depth of analysis and professional execution. The structural insights provided a new dimension to our decision-making process.</p>
-        <p><strong>— Senior Leadership, Hero Group</strong></p>
+        <img src="/assets/Munjal.jpeg" alt="Senior Leadership, Hero Group" style="height:180px; width: auto; margin-bottom: 25px; border-radius: 8px;">
+        <p style="font-size: 18px; line-height: 1.6; color: #e2e8f0;">★★★★★ Harmony AI delivered exceptional depth of analysis and professional execution. The structural insights provided a new dimension to our decision-making process.</p>
+        <p style="color: #5eead4;"><strong>— Senior Leadership, Hero Group</strong></p>
     </div>
 </div>
 
+<!-- ================= FOOTER (PRESERVED) ================= -->
 <footer>
-    <img src="/assets/Harmony.png" height="40">
-    <p>© 2026 Harmony Systems Worldwide, Inc.</p>
-    <p>contact@harmony-business-ai.xyz | +91-8383995759</p>
+    <img src="/assets/Harmony.png" height="40" alt="Harmony AI Logo">
+    <p>© 2026 Harmony Systems Worldwide, Inc. | Patent based IP Framework: Arjit’s Theory – The Art of Problem Solving™</p>
+    <p>contact@harmony-business-ai.xyz | +91-9560300666</p>
     <div style="margin-top: 20px;">
         <a href="/">Home</a> | <a href="/blog/">Blog</a> | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/refund.html">Refund</a>
     </div>
 </footer>
 
+<!-- ================= DEMO MODAL (PRESERVED) ================= -->
 <div id="demoModal" class="modal">
     <div class="modal-box">
         <span class="close" onclick="closeModal()">×</span>
         <h2>Harmony AI Demo</h2>
-        <p>Try our demo application or the live system.</p>
+        <p style="color:#94a3b8;">Try our demo application or the live system.</p>
         <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
             <a href="https://wa.link/hetal3" target="_blank" class="btn">WhatsApp Demo Request</a>
-            <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn" style="background: #0f172a;">Try Live System</a>
+            <a href="https://harmony-business-intelligence.streamlit.app/" target="_blank" class="btn btn-teal">Try Live System</a>
         </div>
     </div>
 </div>
